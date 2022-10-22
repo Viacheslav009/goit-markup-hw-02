@@ -1,0 +1,32 @@
+body {
+ background-color: #F5F5F5;
+ color: #757575;   
+}
+/*цвет основного  черного текста color: #212121
+цвет вторичного черного текста color: #757575
+задний фон основной темный     background: #2F303A
+белый h1, шапка, studio-logo-footer background: #FFFFFF 
+белый основной background: #F5F5F5
+белый вторичный background: #F5F4FA
+акцент web-logo background: #2196F3
+studio-logo-header #000000
+*/
+.logo-wed{
+    color: #2196F3;
+}
+.logo-st{
+    color: #000000;
+}
+ul{
+    list-style: none;
+}
+.link{
+    color: #2196F3;
+}
+.link:hover,
+.link:focus{
+  color: #000000;  
+}
+.section-title{
+  color: #212121  
+}
