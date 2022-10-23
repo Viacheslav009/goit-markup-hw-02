@@ -3,8 +3,9 @@
 body {
  background-color: #F5F5F5;
  color: #757575;  
- font-family: Raleway,Roboto;
+ font-family: Roboto,Raleway;
 }
+
 /*цвет основного  черного текста color: #212121
 цвет вторичного черного текста color: #757575
 задний фон основной темный     background: #2F303A
@@ -14,24 +15,36 @@ body {
 акцент web-logo background: #2196F3
 studio-logo-header #000000
 */
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --accent:#2196F3;
+    --background-white:#F5F5F5;
+    --secondary-background-white:#F5F4FA;
+    --hero-footer-background:#2F303A;
+    --primary-text-color:#212121;
+    --secondary-text-color:#757575;
+
+}
 /*logo*/
 .logo{
+font-family: 'Raleway';    
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: calc(31/26);
 letter-spacing: 0.03em;
 
-color: #2196F3;
-;
+color: var(--accent);
+
 }
 .logo-header{
-    color: #000000;
+    color: var(--black);
 }
 .logo-footer{
-    color:  #FFFFFF ;
+    color:  var(--white) ;
 }
 /* убираем точки в списке везде*/
-ul{
+.list{
     list-style: none;
 }
 /*---навигация---*/
@@ -42,44 +55,42 @@ ul{
 .nav-link {
 font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: calc(16/12);
 letter-spacing: 0.02em;
 
-color: #212121;
+color: var(--primary-text-color);
 
 }
 .nav-link:hover,
 .nav-link:focus{
-  color: #2196F3;  
+  color: var(--accent);  
 }
 .info-tel{
     font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: calc(16/14);
 letter-spacing: 0.02em;
-color: #757575;
+color: var(--secondary-text-color);
 }
 .info-tel:hover,
 .info-tel:focus{
-   color: #2196F3; 
+   color: var(--accent); 
 }
 
 
 
 /*--hero--*/
 .post-title {
-  font-family: 'Roboto';
-font-style: normal;
 font-weight: 900;
 font-size: 44px;
-line-height: 60px;
-/* or 136% */
+line-height: calc(60/44);
+
 
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
-color: #FFFFFF;
+color: var(--white);
  
  
 }
@@ -90,75 +101,67 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
-line-height: 30px;
-/* identical to box height, or 188% */
+line-height: calc(30/16);
+
 
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 
-color: #FFFFFF;
+color: var(--white);
 border: none;
-background-color: #2196F3;
+background-color: var(--accent);
 cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus{
- color: #212121   
+ color: var(--primary-text-color);   
 }
 /*---особливости---*/
 .section-title {
-    font-weight: 700;
+font-weight: 700;
 font-size: 14px;
-line-height: 16px;
+line-height: calc(16/14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
 
-color: #212121;
+color: var(--primary-text-color);
 }
 .section-title-item {
-    font-weight: 400;
+font-weight: 400;
 font-size: 14px;
-line-height: 24px;
-/* or 171% */
-
+line-height: calc(24/14);
 letter-spacing: 0.03em;
-
-color: #757575;
+color: var(--secondary-text-color);
 
 }
 /*--фото чим ми займаэмося та бригада--*/
 .section{
-  font-weight: 700;
+font-weight: 700;
 font-size: 36px;
-line-height: 42px;
+line-height: calc(42/36);
 text-align: center;
 letter-spacing: 0.03em;
 
-color: #212121;}
+color: var(--primary-text-color);}
 .section-unit-work {
-    font-weight: 400;
+font-weight: 400;
 font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
+line-height: calc(19/16);
 text-align: center;
 letter-spacing: 0.03em;
 
-color: #757575;
-
+color: var(--secondary-text-color);
 }
 .section-unit {
-    ont-weight: 500;
+font-weight: 500;
 font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
+line-height: calc(19/16);
 text-align: center;
 letter-spacing: 0.03em;
 
-color: #212121;
+color: var(--primary-text-color);
 
 }
 
@@ -166,26 +169,32 @@ color: #212121;
 /*----footer----*/
 
 .info-tel-ad {
-font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 24px;
+line-height: calc(24/14);
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--white);
 }
 .info-tel-footer{
-font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 24px;
-/* or 171% */
-
+line-height: calc(24/14);
 letter-spacing: 0.03em;
 
 color: rgba(255, 255, 255, 0.6);
 }
+
+.info-tel-ad:hover,
+.info-tel-ad:focus,
+.info-tel-footer:hover,
+.info-tel-footer:focus{
+    color: var(--accent);
+}
+
+
+
 
 /*---------------------------------------------------------------------*/
                         /*portfolio.html*/
@@ -194,40 +203,34 @@ color: rgba(255, 255, 255, 0.6);
 font-family: 'Roboto';
 font-weight: 500;
 font-size: 16px;
-line-height: 26px;
+line-height: calc(26/16);
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--primary-text-color);
 background: #EEEEEE;
 border: none;
 cursor: pointer;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--white);
+    background-color: var(--accent);
 }
 
 .example {
-    font-weight: 700;
+font-weight: 700;
 font-size: 18px;
-line-height: 36px;
-/* identical to box height, or 200% */
-
+line-height: calc(36/18);
 letter-spacing: 0.06em;
-
-color: #212121;
+color: var(--primary-text-color);
 
 }
 .example-item {
-    font-weight: 400;
+font-weight: 400;
 font-size: 16px;
-line-height: 30px;
-/* identical to box height, or 188% */
-
+line-height: calc(30/16);
 letter-spacing: 0.03em;
-
-color: #757575;
+color: var(--secondary-text-color);
 
 }
 
