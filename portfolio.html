@@ -6,87 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+   a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+  </style>
   </head>
   <body>
+    <!--шапка-->
     <header>
-      <a href="/"><span class="logo-wed">Web</span><span class="logo-st">Studio</span></a>
+      <a class="logo" href="index.html">Web</span><span class="logo-header">Studio</span></a>
       <nav>
-        <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="/">Портфоліо</a></li>
-          <li><a href="/">Контакти</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
+          <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+          <li class="nav-item"><a href="/" class="nav-link">Контакти</a></li>
         </ul>
       </nav>
 
-      <a href="info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
+      <a href="info@devstudio.com" class="info-tel">info@devstudio.com</a><br/>
+      <a href="tel:+380961111111" class="info-tel">+38 096 111 11 11</a>
     </header>
     <main>
       <section>
         <!--portfolio-->
         <h1>filters</h1>
         <ul>
-          <li><button tupe="button">Усі</button></li>
-          <li><button tupe="button">Веб-сайти</button></li>
-          <li><button tupe="button">Додатки</button></li>
-          <li><button tupe="button">Дизайн</button></li>
-          <li><button tupe="button">Маркетинг</button></li>
+          <li><button tupe="button" class="portfolio-btn">Усі</button></li>
+          <li><button tupe="button" class="portfolio-btn">Веб-сайти</button></li>
+          <li><button tupe="button" class="portfolio-btn">Додатки</button></li>
+          <li><button tupe="button" class="portfolio-btn">Дизайн</button></li>
+          <li><button tupe="button" class="portfolio-btn">Маркетинг</button></li>
         </ul>
         <h2>portfolio</h2>
         <ul>
           <li>
             <img src="./img/tehno.png" alt="tehno"></img>
-              <h3>Технокряк</h3>
-                <h4>Веб-сайт</h4>
+              <h3 class="example">Технокряк</h3>
+                <h4 class="example-item">Веб-сайт</h4>
               
             
           </li>
           <li>
             <img src="./img/basket.png" alt="basket"></img>
-              <h3>Постер New Orlean vs Golden Star</h3>
-                <h4>Дизайн</h4>
+              <h3 class="example">Постер New Orlean vs Golden Star</h3>
+                <h4 class="example-item">Дизайн</h4>
               
             
           </li>
           <li>
             <img src="./img/seafood.png" alt="seafood"></img>
-              <h3>Ресторан Seafood</h3>
-                <h4>Додаток</h4>
+              <h3 class="example">Ресторан Seafood</h3>
+                <h4 class="example-item">Додаток</h4>
               
             
           </li>
           <li>
             <img src="./img/prime.png" alt="prime"></img>
-              <h3>Проєкт Prime</h3>
-                <h4>Маркетинг</h4>
+              <h3 class="example">Проєкт Prime</h3>
+                <h4 class="example-item">Маркетинг</h4>
               
             
           </li>
           <li>
             <img src="./img/boxes.png" alt="boxes"></img>
-              <h3>Проєкт Boxes</h3>
-                <h4>Додаток</h4>
+              <h3 class="example">Проєкт Boxes</h3>
+                <h4 class="example-item">Додаток</h4>
               
             
           </li>
           <li>
             <img src="./img/borders.png" alt="borders"></img>
-              <h3>Inspiration has no Borders</h3>
-                <h4>Веб-сайт</h4>
+              <h3 class="example">Inspiration has no Borders</h3>
+                <h4 class="example-item">Веб-сайт</h4>
               
             
           </li>
           <li>
             <img src="./img/book.png" alt="book"></img>
-              <h3>Видання Limited Edition</h3>
-                <h4>Дизайн</h4>
+              <h3 class="example">Видання Limited Edition</h3>
+                <h4 class="example-item">Дизайн</h4>
               
             
           </li>
           <li>
             <img src="./img/label.png" alt="label"></img>
-              <h3>Проєкт LAB</h3>
-                <h4>Маркетинг</h4>
+              <h3 class="example">Проєкт LAB</h3>
+                <h4 class="example-item">Маркетинг</h4>
                 
                 
               
@@ -94,7 +103,7 @@
           </li>
           <li>
             <img src="./img/growing.png" alt="growing"></img>
-              <h3>Growing Business</h3>
+              <h3 class="example">Growing Business</h3>
                 <h4>Додаток</h4>
               
             
@@ -102,17 +111,21 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="/">Webstudio</a>
+    <!--на подвале-->
+    <footer style="background-color: #2F303A;">
+      <a class="logo" href="index.html">Web</span><span class="logo-footer">Studio</span></a>
       <address>
         <ul>
           <li>
-            <a href="https://goo.gl/maps/oGdaYsp25zFcmJvW9" target="_blank" rel="nofolow"
+            <a class="info-tel-ad"
+              href="https://goo.gl/maps/oGdaYsp25zFcmJvW9"
+              target="_blank"
+              rel="nofolow"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-          <li><a href="info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="info-tel-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a class="info-tel-footer" href="info@devstudio.com">info@devstudio.com</a></li>
         </ul>
       </address>
     </footer>
